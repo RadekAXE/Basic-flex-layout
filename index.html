@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic e-shop | Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6c24e714bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="card-1.css" />
+    <link rel="stylesheet" href="card-2.css" />
+    <link rel="stylesheet" href="card-3.css" />
+  </head>
+  <body>
+    <main class="content">
+      <header class="hero-section">
+        <div class="hero-intro">
+            <div class="hero-text">
+                <h1 class="hero-title">Nakupujte ještě dnes za bezkonkurenční ceny!</h1>
+                <p class="hero-subtitle">Vaše destinace pro úspory a styl</p>
+            </div>
+            <span class="badge-discount capital"><span>25% off</span>
+        </div>
+            </span>
+        <button class="btn-more">Více</button>
+      </header>
+
+      <!-- Promo section -->
+      <section class="promo-section">
+        <div class="promo-cards promo-card-1 promo-column">
+          <p>Speciální nabídka robotických vysavačů!</p>
+          <button class="btn-more">Více</button>
+        </div>
+        <div class="promo-cards promo-card-2 promo-column">
+          <p>Nejlepší ceny na všechny mobilní telefony!</p>
+          <button class="btn-more">Více</button>
+        </div>
+        <div class="promo-cards promo-card-3 promo-column">
+          <p>Objevte nepřekonatelné nabídky na módu a oblečení!</p>
+          <button class="btn-more">Více</button>
+        </div>
+      </section>
+
+
+      <!-- Card section -->
+      <section class="card-section">
+        <!-- CARD 1 -->
+        <div class="product-card-1">
+          <span class="bestseller-badge">Bestseller</span>
+          <span class="discount-badge">-50%</span>
+          <div class="product-image-container">
+            <img src="./media/bota.png" />
+          </div>
+          <h1 class="product-title">
+            Kvalitní Pánská Sportovní Bota Nike METCON 2
+          </h1>
+          <p class="product-description">
+            Tato pánská sportovní bota je dokonalým spojením komfortu a stylu.
+            Vyrobena z vysoce kvalitního materiálu, nabízí optimální oporu a
+            pohodlí pro vaše nohy...
+          </p>
+          <div class="product-info-container">
+            <span class="product-more-info">Více info</span>
+          </div>
+          <div class="product-details-container">
+            <span class="product-shipping-label">Doprava zdarma</span>
+            <span class="product-stock-label">Skladem 4 kusy</span>
+          </div>
+          <div class="product-price-label-container">
+            <span class="product-price-label">Cena produktu</span>
+          </div>
+
+          <div class="product-price-container">
+            <span class="product-price">2799 Kč</span>
+          </div>
+
+          <div class="product-discount-price-container">
+            <span class="product-discount-price">1100 Kč</span>
+          </div>
+
+          <div class="product-add-to-cart-container">
+            <span class="add-to-cart-button">Přidat do košíku</span>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-card-2">
+          <span class="bestseller-badge">Bestseller</span>
+          <span class="claim-badge">Produkt roku 2023</span>
+          <span class="discount-badge">-25%</span>
+          <div class="product-image-container">
+            <img src="./media/pc-card.png" />
+          </div>
+          <h1 class="product-title">HP Pavilion 15-dk0002nc Stolní Počítač</h1>
+          <p class="product-description">
+            HP Pavilion 15-dk0002nc je výkonný stolní počítač, který splní vaše
+            všechny počítačové potřeby. Tento model je vybaven nejnovějším
+            procesorem, velkou pamětí RAM a rychlou grafickou kartou, což ho
+            činí ideálním pro náročné úkoly, hraní her i produktivní práci
+          </p>
+          <div class="product-price-order-container">
+            <div class="product-price-container">
+              <span class="product-price">35 990,-</span>
+            </div>
+            <div class="product-discount-price-container">
+              <span class="product-discount-price">Ušetříte 1000,</span>
+            </div>
+            <div class="product-add-to-cart-container">
+              <span class="add-to-cart-button">Do košíku</span>
+            </div>
+          </div>
+          <div class="product-details-container">
+            <span class="product-shipping-label"
+              >Poštovní box 1500 metrů od tvé lokace</span
+            >
+            <span class="product-info-label">info</span>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-card">
+          <span class="recomendation-ribbon">CZC doporučuje</span>
+          <span class="warranty-ribbon">prodloužená záruka</span>
+          <div class="product-image">
+            <img
+              src="./media/obrazek.webp"
+              alt="Herní sluchátka značky Gaming Hellhound"
+            />
+          </div>
+          <div class="save-badge">
+            <span>Ušetříte</span>
+            <span>199Kč</span>
+          </div>
+          <div class="extra-discount-badge">
+            <span class="extra-discount">Extra sleva </span>
+            <span class="extra-discount-price">225Kč</span>
+          </div>
+          <div class="product-rating-container">
+            <div class="product-rating">
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star"></span>
+              <span class="fa-solid fa-star last-star"></span>
+            </div>
+            <div class="product-options">
+              <a href=""><span class="four-options">4</span> varianty</a>
+            </div>
+          </div>
+          <h1 class="czcgaming">
+            CZC.Gaming Hellhound, herní sluchátka, černá/červená
+          </h1>
+          <div class="discount-continer">
+            <div class="product-price-with-discount">
+              <span>675 Kč</span>
+            </div>
+            <div class="product-discount-code">
+              <span
+                >Cena s kódem:
+                <span class="discount-code">CZCG25OFF</span></span
+              >
+            </div>
+          </div>
+          <div class="product-price-container">
+            <div class="product-price2">
+              <span class="product-price-was">1 099 Kč</span>
+              <span class="product-price-now">899 Kč</span>
+            </div>
+            <button type="button" class="add-to-card-btn">
+              <span class="fa-solid fa-cart-arrow-down">&nbsp;</span>Do košíku
+            </button>
+          </div>
+          <div class="poduct-shipping-container">
+            <div class="product-compare">
+              <span>Porovnat</span>
+            </div>
+            <div class="product-shipping">
+              <span class="delivery-till-christmas">dodání do Vánoc</span
+              ><span>5 a více kusů</span>
+            </div>
+          </div>
+          <p>
+            Náhlavní herní sluchátka mají frekvenční rozsah 20 Hz až 20 kHz.
+            Nabízí prostorový zvuk 7.1, velikost měniče je 53 mm, citlivost 100
+            dB, impedance 60 ohmů. Disponují mikrofonem s rozsahem 100 Hz až 10
+            kHz. Připojení přes USB-A či 3.5mm konektor, délka kabelu 2 m.
+            Rozměry sluchátek 220 x 180 x 100 mm, hmotnost 288 g.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

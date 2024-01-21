@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typography */
+  --ff-primary-roboto: "Roboto", sans-serif;
+  --fs-300: 0.625rem;
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+  --fs-h1: clamp(2rem, 2rem + 1vw, 3rem);
+  --text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+
+  /* Colors */
+  --fc-primary-white: hsl(0, 0%, 100%);
+  --buttons-badges-red: hsl(0, 100%, 50%);
+  --light-green: hsl(124, 46%, 93%);
+
+  /* Spacing */
+  --text-gap: 0.8rem;
+  --section-gap: 2rem;
+}
+
+body {
+  font-family: var(--ff-primary-roboto);
+  font-size: var(--fs-400);
+}
+
+/* Content styling */
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* -->sections gaps */
+
+.hero-section,
+.promo-section {
+  margin-bottom: var(--section-gap);
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 70%;
+  }
+}
+
+/* Badge styling */
+.badge-discount {
+  background-color: var(--buttons-badges-red);
+  border-radius: 50%;
+  color: var(--fc-primary-white);
+  height: 4.375rem;
+  width: 4.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--fs-400);
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-section .badge-discount {
+    display: none;
+  }
+}
+
+/* Buttons */
+.btn-more {
+  background-color: var(--buttons-badges-red);
+  color: var(--fc-primary-white);
+  font-size: var(--fs-300);
+  padding: 0.7em 1.5em;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.button-more:hover {
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero-section {
+  background-image: url(./media/hero-section-img.png);
+  color: var(--fc-primary-white);
+  text-shadow: var(--text-shadow);
+  height: 25rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-section .btn-more {
+  align-self: flex-start;
+}
+
+.hero-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-title {
+  margin-bottom: 0.8rem;
+  font-size: var(--fs-h1);
+}
+
+.hero-subtitle {
+  font-size: var(--fs-500);
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+/* Promo section */
+.promo-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.promo-cards {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.5rem;
+  max-width: 300px;
+  height: 250px;
+  color: var(--fc-primary-white);
+  font-weight: 500;
+  font-size: var(--fs-500);
+  text-shadow: var(--text-shadow);
+}
+
+.promo-card-1 {
+  background-image: url(./media/vysavac.png);
+}
+
+.promo-card-2 {
+  background-image: url(./media/mobil.png);
+}
+
+.promo-card-3 {
+  background-image: url(./media/clothes.png);
+}
+
+.promo-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Card setion */
+.card-section {
+  background-color: var(--light-green);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
